@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 
 class WeatherMessage extends Component {
+
     render(){
+        var {temp, location} = this.props;
         return(
-            <h3>It is 90 in The DR!!!</h3>
+            <h3>It is {temp} in {location} !!!</h3>
         );
     }
 }
