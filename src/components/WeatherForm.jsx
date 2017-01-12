@@ -18,10 +18,10 @@ class WeatherForm extends Component {
 
     render(){
         return (
-            <div>
+            <div className="form-group">
                 <form onSubmit={this.onFormSubmit}>
-                    <input type="text" ref="location"/>
-                    <button>Get Weather</button>
+                    <input type="text" ref="location" className="form-control"/>
+                    <button className="btn btn-primary btn-lg">Get Weather</button>
                 </form>
             </div>
         );

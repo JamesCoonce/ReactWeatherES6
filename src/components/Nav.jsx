@@ -4,12 +4,24 @@ import {Link, IndexLink} from 'react-router';
 class Nav extends Component {
     render() {
         return (
-            <div>
-                <h2>Nav Component</h2>
-                <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
-                <Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link>
-                <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link>
-            </div>
+            <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+                <Link className="navbar-brand react-brand">Bootstrap Weather App</Link>
+                <div className="collapse navbar-collapse">
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item">
+                            <IndexLink className="nav-link" to="/">Get Weather</IndexLink>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/about" className="nav-link">About</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/examples" className="nav-link">Examples</Link>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
         );
     }
 }
