@@ -5,7 +5,7 @@ import Main from './components/Main';
 import Weather from './components/Weather';
 import About from './components/About';
 import Examples from './components/Examples';
-import './index.css';
+//import './index.css';
 
 ReactDOM.render(
   <Router history={browserHistory}>
